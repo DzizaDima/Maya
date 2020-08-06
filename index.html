@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -14,6 +16,7 @@
 
 <body>
   <div class="container-fluid">
+   
     <div class="row header">
       <div class="col-lg-3 start">
         <div class="start-content">
@@ -34,7 +37,28 @@
       </div>
       <div class="col-lg-3 ">
         <div class="nav">
-          <a href=""> <i class="fas fa-bars menu"></i></a>
+          <a href="#" data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-bars menu"></i></a>
+          
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
         <div class="course-info">
           <div class="course-format">
@@ -103,66 +127,446 @@
         <div class="poster">
           <i class="far fa-question-circle"></i>
           <div class="descr">
-         <p>Занятия курса проходят в утренних и вечерних группах, два раза в день. Ва сами можете выбирать удобное для учебы время.</p>
+            <p>Занятия курса проходят в утренних и вечерних группах, два раза в день. Ва сами можете выбирать удобное
+              для учебы время.</p>
           </div>
-          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="background-color: white; height: 100px;">
+      <div class="col-lg-12">
+
       </div>
     </div>
     <div class="row">
-      <div class="accordion"> 
+      <div class="accordion">
         <div class="tab">
-         <input type="checkbox" id="tab1" name="tab-group">
-         <label for="tab1" class="tab-title">
-           <div class="logo-box">
-             <img src="./img/lupa.png" class="img-fluid">
-           </div>
-           <div class="accord-content">
-             <h4 class="accord-content-title">1.Поиск идеи</h4>
-             <p class="accord-content-desc w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam maiores obcaecati laborum, architecto repudiandae dignissimos expedita iure excepturi in! Quaerat enim sapiente fuga. Assumenda molestiae dolores iusto? Ipsam, cum itaque!</p>
-             <p class="accord-content-btn">подробнее о блоке</p>
-           </div>
-         </label> 
-         <section class="tab-content"> 
-          <p>Под HTML5 обычно подразумевают два разных понятия:</p>
-          <ul>
-           <li>Это язык разметки документа, пришедший на смену HTML4 и XHTML.</li>
-           <li>Это набор веб-технологий, позволяющий делать на сайте 
-            всякие интересные штуки.</li>
-          </ul>
-         </section> 
-        </div> 
-       <!--  <div class="tab">
-         <input type="checkbox" id="tab2" name="tab-group">
-         <label for="tab2" class="tab-title">Можно ли программировать на HTML5?</label> 
-         <section class="tab-content"> 
-          Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
-          Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
-         </section> 
-        </div> 
+          <input type="checkbox" id="tab1" name="tab-group">
+          <label for="tab1" class="tab-title">
+            <div class="logo-box">
+              <img src="./img/lupa.png" class="img-fluid">
+            </div>
+            <div class="accord-content">
+              <h4 class="accord-content-title w-25">1.Поиск идеи</h4>
+              <p class="accord-content-desc w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam maiores
+                obcaecati laborum, architecto repudiandae dignissimos expedita iure excepturi in! Quaerat enim sapiente
+                fuga. Assumenda molestiae dolores iusto? Ipsam, cum itaque!</p>
+              <p class="accord-content-btn">подробнее о блоке</p>
+            </div>
+          </label>
+          <section class="tab-content">
+            <ul class="tab-content-list">
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">1.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">1.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">1.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+
         <div class="tab">
-         <input type="checkbox" id="tab3" name="tab-group">
-         <label for="tab3" class="tab-title">Чем HTML5 отличается от HTML4?</label>
-         <section class="tab-content">
-          В HTML5 добавлены новые элементы, вроде &lt;header&gt;, &lt;footer&gt;, 
-          &lt;aside&gt;, &lt;article&gt;, появилась долгожданная поддержка аудио, 
-          видео и многое другое.
-         </section>
-        </div> -->
-       </div>
+          <input type="checkbox" id="tab2" name="tab-group">
+          <label for="tab2" class="tab-title">
+            <div class="logo-box">
+              <img src="./img/raketa.png" class="img-fluid">
+            </div>
+            <div class="accord-content">
+              <h4 class="accord-content-title w-25">2.старт бизнеса</h4>
+              <p class="accord-content-desc w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam maiores
+                obcaecati laborum, architecto repudiandae dignissimos expedita iure excepturi in! Quaerat enim sapiente
+                fuga. Assumenda molestiae dolores iusto? Ipsam, cum itaque!</p>
+              <p class="accord-content-btn">подробнее о блоке</p>
+            </div>
+          </label>
+          <section class="tab-content">
+            <ul class="tab-content-list">
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">2.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">2.2 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">2.3 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="tab">
+          <input type="checkbox" id="tab3" name="tab-group">
+          <label for="tab3" class="tab-title">
+            <div class="logo-box coffe-norm">
+              <img src="./img/coffe.png" class="img-fluid">
+            </div>
+            <div class="accord-content">
+              <h4 class="accord-content-title w-25">3.персональный бренд</h4>
+              <p class="accord-content-desc w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam maiores
+                obcaecati laborum, architecto repudiandae dignissimos expedita iure excepturi in! Quaerat enim sapiente
+                fuga. Assumenda molestiae dolores iusto? Ipsam, cum itaque!</p>
+              <p class="accord-content-btn">подробнее о блоке</p>
+            </div>
+          </label>
+          <section class="tab-content">
+            <ul class="tab-content-list">
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">3.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">3.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">3.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="tab">
+          <input type="checkbox" id="tab4" name="tab-group">
+          <label for="tab4" class="tab-title">
+            <div class="logo-box">
+              <img src="./img/photo.png" class="img-fluid">
+            </div>
+            <div class="accord-content">
+              <h4 class="accord-content-title w-25">4.искусство интуитивной фотографии</h4>
+              <p class="accord-content-desc w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam maiores
+                obcaecati laborum, architecto repudiandae dignissimos expedita iure excepturi in! Quaerat enim sapiente
+                fuga. Assumenda molestiae dolores iusto? Ipsam, cum itaque!</p>
+              <p class="accord-content-btn">подробнее о блоке</p>
+            </div>
+          </label>
+          <section class="tab-content">
+            <ul class="tab-content-list">
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">4.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">4.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">4.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="tab">
+          <input type="checkbox" id="tab5" name="tab-group">
+          <label for="tab5" class="tab-title">
+            <div class="logo-box">
+              <img src="./img/noize.png" class="img-fluid">
+            </div>
+            <div class="accord-content">
+              <h4 class="accord-content-title w-25">5.технологии маркетинга</h4>
+              <p class="accord-content-desc w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam maiores
+                obcaecati laborum, architecto repudiandae dignissimos expedita iure excepturi in! Quaerat enim sapiente
+                fuga. Assumenda molestiae dolores iusto? Ipsam, cum itaque!</p>
+              <p class="accord-content-btn">подробнее о блоке</p>
+            </div>
+          </label>
+          <section class="tab-content">
+            <ul class="tab-content-list">
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">5.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">5.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+              <li class="tab-content-list-item">
+                <p class="tab-content-list-item-title">5.1 Lorem, ipsum dolor.</p>
+                <p class="tab-content-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  repellat adipisci, dolore vitae est et ratione rem impedit deserunt nam obcaecati debitis repudiandae.
+                  Dignissimos, placeat explicabo beatae rerum inventore natus.Id eaque aperiam iure pariatur mollitia.
+                  Dicta voluptatum ullam deserunt officiis. Praesentium ullam saepe ipsum voluptatum perferendis quam
+                  neque illum eius, error nisi iusto consequatur accusamus libero ipsam? Maxime, voluptatum!</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="row ">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="timetable-card">
+          <div class="timetable-card-item">
+            <div class="timetable-card-item-title">
+              <p class="hours w-25">85 часов</p>
+              <p class="theme">1. Поиск идеи</p>
+            </div>
+            <div class="timetable-card-item-line color-line">
+              <p class="dates w-25">04.09 - 06.09</p>
+              <p class="notes">Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="timetable-card-item-line ">
+              <p class="dates w-25">06.09 - 08.09</p>
+              <p class="notes">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="timetable-card-item-line color-line">
+              <p class="dates w-25">11.09 - 13.09</p>
+              <p class="notes">Lorem, ipsum.</p>
+            </div>
+          </div>
+
+          <div class="timetable-card-item">
+            <div class="timetable-card-item-title">
+              <p class="hours w-25">100 часов</p>
+              <p class="theme">2. Старт бизнеса</p>
+            </div>
+            <div class="timetable-card-item-line color-line">
+              <p class="dates w-25">04.09 - 06.09</p>
+              <p class="notes">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="timetable-card-item-line ">
+              <p class="dates w-25">06.09 - 08.09</p>
+              <p class="notes">Lorem, ipsum dolor.</p>
+            </div>
+            <div class="timetable-card-item-line weekend-line">
+              <p class="dates w-25">06.11 - 19.11</p>
+              <p class="notes">Weekend</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 section-title-box">
+        <div class="section-title">
+          <p>Подробное расписание</p>
+          <hr class="section-title-line">
+        </div>
+      </div>
+    </div>
+    <div class="row format-education-container">
+      <div class="col-lg-7 offset-lg-3">
+        <img src="./img/format.png" class="img-fluid">
+        <p class="format-desc">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae perspiciatis explicabo
+          tempore natus, quas velit veniam ab cumque? Doloribus sequi nihil delectus perspiciatis, voluptate saepe
+          ullam accusamus quidem expedita esse?
+        </p>
+      </div>
+      <div class="col-lg-2 section-title-box">
+        <div class="section-title section-format">
+          <p>Подробное расписание</p>
+          <hr class="section-title-line">
+        </div>
+      </div>
+    </div>
+    <div class="row slider-container">
+      <div class="col-md-8 offset-md-2">
+        <div class="names">
+          <div>
+            <div class="names-item">
+              <img src="./img/alexey.png" alt="">
+              <div class="names-item-text">
+                <p class="name">
+                  alexey cherednichenko
+                </p>
+                <p class="role">
+                  Head admin
+                </p>
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias veniam ipsam quasi a
+                  aliquid officia culpa, dolorem quo repellendus aut, quis corporis asperiores quisquam aspernatur rem
+                  animi quod, quos consectetur?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="names-item">
+              <img src="./img/alexey.png" alt="">
+              <div class="names-item-text">
+                <p class="name">
+                  alexey cherednichenko
+                </p>
+                <p class="role">
+                  Head admin
+                </p>
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias veniam ipsam quasi a
+                  aliquid officia culpa, dolorem quo repellendus aut, quis corporis asperiores quisquam aspernatur rem
+                  animi quod, quos consectetur?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="names-item">
+              <img src="./img/alexey.png" alt="">
+              <div class="names-item-text">
+                <p class="name">
+                  alexey cherednichenko
+                </p>
+                <p class="role">
+                  Head admin
+                </p>
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias veniam ipsam quasi a
+                  aliquid officia culpa, dolorem quo repellendus aut, quis corporis asperiores quisquam aspernatur rem
+                  animi quod, quos consectetur?
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="controls">
+          <div class="arrows">
+            <span class="arrow-slider" id="prev-arrow" autofocus> <img src="./img/left.png" alt="" class="img-fluid">
+            </span>
+            <span class="arrow-slider" id="next-arrow" autofocus> <img src="./img/right.png" alt="" class="img-fluid">
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 section-title-box">
+        <div class="section-title section-slider">
+          <p>Подробное расписание</p>
+          <hr class="section-title-line">
+        </div>
+      </div>
+    </div>
+    <div class="row contacts-row">
+      <div class="col-lg-6 contacts-col">
+        <div class="contacts-title">
+          <div class="contacts-title-text">
+            <h3 class="contacts-title-text-title">Контакты</h3>
+            <p class="adress">Харьков, Отакара Яроша 18, БЦ «Солярис», 4й этаж</p>
+          </div>
+          <img src="./img/marker.png" class="img-fluid">
+        </div>
+        <div class="contacts-info pt-5">
+          <a href="tel:+380999729999" class="contacts-info-item"><img src="./img/phone.png"
+              class="img-fluid contact-img">099-972-99-99</a>
+          <a href="mailto:INFO@ican.business" class="contacts-info-item"><img src="./img/mail.png"
+              class="img-fluid contact-img">INFO@ican.business</a>
+          <a href="#" class="contacts-info-item"><img src="./img/telegram.png" class="img-fluid contact-img">telegram
+            link</a>
+        </div>
+        <div class="map">
+         <!--  <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.200821125689!2d36.21503841524814!3d50.02633272571494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1269bbc8da9%3A0x726743e7e2246d52!2zM0RNQVlBLiDQmtGD0YDRgSAzZC3Qs9GA0LDRhNC40LrQuCwg0LDQvdC40LzQsNGG0LjQuCDQuCBWRlg!5e0!3m2!1sru!2sua!4v1596738540483!5m2!1sru!2sua"
+            width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe> -->
+            <img src="./img/map.png" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-6 form-col">
+        <div class="form-logo">
+          <img src="./img/form-ico.png" class="img-fluid">
+        </div>
+        <form>
+          <div class="form-group ">
+            <label for="inpName">Имя / Фамилия</label>
+            <input type="text" class="form-control" id="inpName">
+          </div>
+          <div class="form-group">
+            <label for="inpEmail">Email-адрес</label>
+            <input type="email" class="form-control" id="inpEmail">
+          </div>
+          <div class="form-group">
+            <label for="inpPhone">Телефон</label>
+            <input type="text" class="form-control" id="inpPhone">
+          </div>
+          <div class="radios-row row">
+            <div class="radios-label col-md-6">
+              <p class="">В КАКОМ ФОРМАТЕ ЖЕЛАЕТЕ ОБУЧАТЬСЯ НА КУРСЕ?</p>
+            </div>
+            <div class="radios col-md-6">
+              <div class="radio">
+                <input id="male" type="radio" name="gender" value="male">
+                <label for="male" class=" label-check">онлайн</label>
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female" class=" label-check">очно</label>
+              </div>
+            </div>
+          </div>
+          <div class="button-box">
+            <button type="submit" class="btn btn-primary">Регистрация</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-
-
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="./script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
@@ -171,6 +575,7 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
   </script>
 </body>
 
