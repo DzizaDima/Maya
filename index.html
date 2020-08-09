@@ -16,9 +16,45 @@
 
 <body>
   <div class="container-fluid">
-   
+
     <div class="row header">
       <div class="col-lg-3 start">
+        
+        <div class="nav-mobile">
+          <a href="#" data-toggle="modal" data-target="#mobileModal"> <i class="fas fa-bars menu"></i></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="mobileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav-open">
+                    <li class="nav-item">
+                      <a href="#">Условия поступления</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Программа курса</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Расписание занятий</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="start-content">
           <p>09/10</p>
         </div>
@@ -36,29 +72,42 @@
 
       </div>
       <div class="col-lg-3 ">
-        <div class="nav">
-          <a href="#" data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-bars menu"></i></a>
-          
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
+        <div class="nav-desctop">
+          <a href="#" data-toggle="modal" data-target="#desctopModal"> <i class="fas fa-bars menu"></i></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="desctopModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav-open">
+                    <li class="nav-item">
+                      <a href="#">Условия поступления</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Программа курса</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Расписание занятий</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+      </div> -->
+              </div>
+            </div>
+          </div>
         </div>
         <div class="course-info">
           <div class="course-format">
@@ -519,11 +568,11 @@
             link</a>
         </div>
         <div class="map">
-         <!--  <iframe
+          <!--  <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.200821125689!2d36.21503841524814!3d50.02633272571494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1269bbc8da9%3A0x726743e7e2246d52!2zM0RNQVlBLiDQmtGD0YDRgSAzZC3Qs9GA0LDRhNC40LrQuCwg0LDQvdC40LzQsNGG0LjQuCDQuCBWRlg!5e0!3m2!1sru!2sua!4v1596738540483!5m2!1sru!2sua"
             width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe> -->
-            <img src="./img/map.png" class="img-fluid">
+          <img src="./img/map.png" class="img-fluid">
         </div>
       </div>
       <div class="col-lg-6 form-col">
@@ -549,9 +598,9 @@
             </div>
             <div class="radios col-md-6">
               <div class="radio">
-                <input id="male" type="radio" name="gender" value="male">
-                <label for="male" class=" label-check">онлайн</label>
-                <input id="female" type="radio" name="gender" value="female">
+                <input id="oline" type="radio" name="format" value="0">
+                <label for="online" class=" label-check">онлайн</label>
+                <input id="female" type="radio" name="format" value="1">
                 <label for="female" class=" label-check">очно</label>
               </div>
             </div>
