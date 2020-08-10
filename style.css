@@ -145,7 +145,7 @@ label {
   margin: 20px 30px;
 }
 
-.nav-desctop .nav-mobile{
+.nav-desctop .nav-mobile {
   justify-content: flex-end;
   padding: 40px;
 }
@@ -218,6 +218,7 @@ label {
   align-items: center;
   color: #afafaf;
   font-size: 20px;
+
 }
 
 .poster:hover {
@@ -230,6 +231,7 @@ label {
   margin-left: -350px;
   margin-top: 17px;
   background: #f3f3f3;
+
 }
 
 .poster:hover .descr {
@@ -246,6 +248,7 @@ label {
   padding: 20px;
   font-family: 'GothamPro-Light';
   font-size: 12px;
+
 }
 
 
@@ -253,6 +256,7 @@ label {
 .tab input,
 .tab-content {
   display: none;
+
 }
 
 .tab {
@@ -285,6 +289,7 @@ label {
 .logo-box {
   background-color: #ffe409;
   padding: 30px;
+  line-height: 3;
 }
 
 .tab-title::after {
@@ -299,13 +304,13 @@ label {
   background-color: yellow;
   margin: auto 80px auto 0px;
   padding: 10px 5px 0 5px;
-
 }
 
 .tab-content {
   padding: 10px 20px;
   /* Поля вокруг текста */
   background-color: #fff;
+
 }
 
 .tab-content-list {
@@ -357,6 +362,7 @@ label {
 .tab :checked~.tab-content {
   display: block;
   /* Показываем содержимое */
+  /*  !important; */
 }
 
 .accord-content {
@@ -391,8 +397,9 @@ label {
 }
 
 .coffe-norm {
-  padding-right: 40px;
+  padding-right: 35px;
 }
+
 
 
 
@@ -839,12 +846,33 @@ form {
   color: #ffe409;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 600px) {
   .modal-dialog {
     max-width: 100% !important;
     max-height: 100% !important;
     margin: 0;
   }
+
+}
+
+
+
+
+@media (min-width: 900px) {
   .nav-desctop {
     display: flex;
     justify-content: flex-end;
@@ -856,24 +884,21 @@ form {
   }
 }
 
+
+
+
+
 @media screen and (max-width:600px) {
   .logo-box {
     text-align: center;
   }
-.start{
-  padding: 10px 30px 80px 80px;
-}
-.start-content {
-  margin-right: 50px;
-}
-  .nav-desctop {
-    display: none;
+
+  .start {
+    padding: 10px 30px 80px 80px;
   }
 
-  .nav-mobile {
-    display: flex;
-    margin-left: auto;
-    padding: 20px 0;
+  .start-content {
+    margin-right: 50px;
   }
 
   .poster:hover .descr {
@@ -973,15 +998,58 @@ form {
 
 
 
+
+}
+
+@media screen and (max-width:770px) {
   .tab-title {
     display: block;
 
   }
+
+  .logo-box {
+    text-align: center;
+  }
+
+  .tab-title::after {
+    margin: -40px 20px auto auto;
+    padding: 10px 5px 0 5px;
+  }
+
+  .accord-content {
+
+    flex-wrap: wrap;
+  }
+
+  .accord-content-title {
+    width: 50% !important;
+  }
+
+  
 }
 
 @media screen and (max-width:990px) {
+  .start {
+    padding: 10px 30px 80px 80px;
+  }
+  .start-content {
+    margin-right: 50px;
+}
+  .start-content-desc{
+    margin-right: 50px;
+  }
   .map {
     position: relative;
+  }
+
+  .nav-desctop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    margin-left: auto;
+    padding: 20px 0;
   }
 
   .format-desc {
